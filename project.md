@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Personal Projects
+title: Project
 nav_order: 2
 --- 
 
-# Personal Projects
+# Projects
 
 ## Mobile and Web Apps
 ### 2016  |    iBuild
@@ -22,6 +22,8 @@ A start-up that offers personal diet plan and catering service. We learn about e
 - Platform: Web (PHP, JavaScript)
 
 <img src="{{site.url}}/images/fataway.jpg" style="display: block; margin: auto;" />
+![FatAway Team at Tech in Asia Singapore 2017.]({{site.url}}/images/fataway.jpg)
+
 
 * * *
 
