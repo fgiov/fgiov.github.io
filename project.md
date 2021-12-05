@@ -15,16 +15,15 @@ The mobile app version of ibuild.co.id. iBuild is a project management platform 
 A mobile app which connects pregnant woman, medics (doctor, midwife, community health center), and volunteers. This project was presented in the final round of an IT competition in Indonesia (Gemastik 9).
 - Platform: Android (Java)
 
-<img src="{{site.url}}/images/immortal.jpg" style="display: block; margin: auto;" />
+<img src="{{site.url}}/images/immortal.jpg" style="display: block; margin: auto; max-width: 60%" />
 
 ### 2017  |    FatAway
 A start-up that offers personal diet plan and catering service. We learn about each of our users' eating preferences using machine learning and come up with the best diet plan. We then deliver the meals fresh to their doors.
 - Platform: Web (PHP, JavaScript)
 
-<figure>
-    <img src="{{site.url}}/images/fataway.jpg" style="display: block; margin: auto; max-width: 80%" />
-    <figcaption>FatAway Team at Tech in Asia Singapore 2017.</figcaption>
-</figure>
+<img src="{{site.url}}/images/fataway.jpg" style="display: block; margin: auto; max-width: 60%" />
+FatAway Team at Tech in Asia Singapore 2017.
+{: .text-center }
 
 * * *
 
@@ -38,4 +37,4 @@ A 2D endless runner game, which takes place in various places and landmarks thro
 A 3D platformer game where player explores the world, solves puzzles, finds hidden treasures, and battles monsters by solving Indonesian word quizzes. This game was presented in the final round of an IT competition in Indonesia (Gemastik 8).
 - Platform: PC (Unity, C#)
 
-<img src="{{site.url}}/images/bedtime.jpg" style="display: block; margin: auto;" />
+<img src="{{site.url}}/images/bedtime.jpg" style="display: block; margin: auto; max-width: 60%" />
