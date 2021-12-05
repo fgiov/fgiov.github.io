@@ -19,6 +19,8 @@ A mobile app which connects pregnant woman, medics (doctor, midwife, community h
 A start-up that offers personal diet plan and catering service. We learn about each of our users' eating preferences using machine learning and come up with the best diet plan. We then deliver the meals fresh to their doors.
 - Platform: Web (PHP, JavaScript)
 
+<img src="{{site.url}}/images/fataway_1.jpg" style="display: block; margin: auto;" />
+
 * * *
 
 ## Video Games
