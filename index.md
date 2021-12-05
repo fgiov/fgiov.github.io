@@ -1,4 +1,11 @@
-## About Me
+---
+layout: default
+title: About Me
+nav_order: 1
+permalink: /
+---
+
+# About Me
 
 I am a Master’s student at Kyoto University, working in Natural Language Processing Lab. My research interest is in knowledge acquisition, especially for temporal common sense understanding.
 
