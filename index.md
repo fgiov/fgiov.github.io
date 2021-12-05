@@ -8,7 +8,7 @@ permalink: /
 # About Me
 
 I am a Master’s student at Kyoto University, working in [Natural Language Processing Lab](https://nlp.ist.i.kyoto-u.ac.jp/). My research interest is in knowledge acquisition, especially for temporal common sense understanding.
-{: .fs-4 .fw-300 }
+{: .fs-5 .fw-300 }
 
 **Email**: felix[at]nlp.ist.i.kyoto-u.ac.jp
 
