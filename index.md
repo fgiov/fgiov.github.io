@@ -15,6 +15,8 @@ I am a Master’s student at Kyoto University, working in [Natural Language Proc
 [LinkedIn](https://www.linkedin.com/in/felixgiovanni/){: .btn }
 [Github](https://github.com/felixgiov){: .btn }
 
+* * *
+
 # Research
 
 #### Current research projects:
@@ -30,6 +32,8 @@ Chenhui Chu, Vinicius Oliveira, **Felix Giovanni Virgo**, Mayu Otani, Noa Garcia
 ## Thesis
 ### Undergraduate Thesis
 **Felix Giovanni Virgo**. Sentiment Analysis and Buzzer Detection for Predicting the 2017 Jakarta Gubernatorial Election, (2018). (In Indonesian)
+
+* * *
 
 # Past Projects
 
@@ -51,8 +55,6 @@ A start-up that offers personal diet plan and catering service. We learn about e
 <img src="{{site.url}}/images/fataway.jpg" style="display: block; margin: auto; max-width: 60%" />
 FatAway Team at Tech in Asia Singapore 2017.
 {: .text-center }
-
-* * *
 
 ## Video Games
 
