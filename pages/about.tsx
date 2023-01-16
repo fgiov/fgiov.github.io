@@ -3,35 +3,50 @@ import { ImageSize, TextAlign, ListType } from "../src/shared/enums";
 import { PageLayout, Text, List, Image, LinkTo, Seperator, Slider } from "../src/components";
 import { CURRENT_YEAR } from "../src/constants/appConstants";
 import { iSEO } from "../src/shared/interfaces";
+import { FiGithub, FiLinkedin, FiBookOpen } from "react-icons/fi";
 
 const AboutUs = () => {
     const PAGE_SEO: iSEO = {
-        title: 'About Us',
-        description: `Hi we are WebExpe. This is an open source blog template which can help you start a simple static blog.`,
-        keywords: 'webexpx, contact us, webexpe13@gmail.com, next js blog template',
-        author: 'Mayur Nalwala, Rupali Yadav'
+        title: 'About',
+        description: `Hello! This is Felix. I started this blog as a way to document my journey learning AI and Machine Learning.`,
+        keywords: 'blog, technology, tech blog, AI, ML, artificial intelligence, machine learning, NLP, natural language processing, CV, computer vision, data science',
+        author: 'Felix Giovanni Virgo'
     }
     return (
         <PageLayout PAGE_SEO={PAGE_SEO} home>
             <section className='container px-3 md:pb-20 md:pt-10 pt-20'>
                 <div className="">
-                    <a href="https://webexpe.com/" target="_blank" rel="noopener noreferrer" className="block md:w-[15%] w-[50%] ">
-                        <img src="/images/YT Logo.png" alt="webexpe.com" className="rounded-lg overflow-hidden" />
+                    <a className="block md:w-[15%] w-[50%] ">
+                        <img src="/images/profile.jpg" className="rounded-full overflow-hidden" />
                     </a>
-                    <Text title className='mb-5 mt-10 dark:text-sky-400 text-sky-600'>
-                        Hi we are WebExpe.
+                    <Text title className='mb-5 mt-10 dark:text-slate-400 text-slate-800'>
+                        Hello. This is Felix.
                     </Text>
-                    <Text subtitle className='text-xl mb-5'>
+                    {/* <Text subtitle className='text-xl mb-5'>
                         This is an open source blog template which can help you start a simple static blog.
-                    </Text>
+                    </Text> */}
 
                     <Text p className='text-lg'>
-                        The idea was to start a blog or create a template with as little investment as possible. <br />In this template we have used Next.js SSG to create static HTML files which can be hosted on firebase or any static site hosting service. <br />
-                        There is also options like vercel for hosting Next.js dynamic webistes but we wanted this template to be easy to use for any non techie person too, so we explored the option of static site generation. <br /><br />
-                        If you have a github account you can clone the project or use it as a template or else you can simply download the code from <a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss" className="underline font-bold">here</a>.
+                        I started this blog as a way to document my journey learning AI and Machine Learning.
+                        I obtained my Master’s degree in Informatics from Kyoto University in Japan.
+                        During my studies, I worked on various Natural Language Processing research projects as a member of the NLP Research Lab.
                     </Text>
 
-                    <div className="flex flex-wrap justify-between">
+                    <div className='flex justify-center mt-5 flex-wrap '>
+                        <a href="https://github.com/felixgiov" target="_blank" rel="noopener noreferrer" className="px-2 pb-2">
+                        <FiGithub className="text-2xl" />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/felixgiovanni/" target="_blank" rel="noopener noreferrer" className="px-2 pb-2">
+                        <FiLinkedin className="text-2xl" />
+                        </a>
+
+                        <a href="https://scholar.google.com/citations?user=LrxCnNgAAAAJ" target="_blank" rel="noopener noreferrer" className="px-2 pb-2">
+                        <FiBookOpen className="text-2xl" />
+                        </a>
+                    </div>
+
+                    {/* <div className="flex flex-wrap justify-between">
                         <div className="md:w-auto w-full my-5">
                             <Text subtitle className='text-3xl font-medium'>
                                 Features
@@ -73,9 +88,9 @@ const AboutUs = () => {
                                 <li>Imp VS Code plugins: <br /> <a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense" target="_blank" rel="noopener noreferrer">Path Intellisense</a> , <br /> <a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" target="_blank" rel="noopener noreferrer">Tailwind CSS IntelliSense</a> </li>
                             </List>
                         </div>
-                    </div>
+                    </div> */}
                     <Seperator />
-                    <Text subtitle className='text-3xl font-medium'>
+                    {/* <Text subtitle className='text-3xl font-medium'>
                         License
                     </Text>
                     <Text p className='text-lg'>
@@ -90,11 +105,10 @@ const AboutUs = () => {
                     </Text>
                     <a href="https://www.buymeacoffee.com/webexpe13z" target="_blank" rel="noopener noreferrer">
                         <img src="/images/bmc.png" className="ml-0" alt="webexpe.com" />
-                    </a>
-                    <div className="px-4 py-3 dark:bg-slate-800 bg-blue-200 rounded my-5">
+                    </a> */}
+                    <div className="px-4 py-3 dark:bg-slate-800 bg-slate-200 rounded my-5">
                         <Text p className="!text-lg leading-relaxed mb-0">
-                            For any any queries related to this project / template feel free to connect with us at <u>webexpe13@gmail.com</u>.
-                            You can also post any comments on our <a href="https://github.com/webexpe13/blog-template-using-nextjs-typescript-tailwindcss/discussions" target="_blank" rel="noopener noreferrer"><u><i>github discussions</i></u></a>.
+                            If you have any questions or find something incorrect in this blog, feel free to reach out to me: <u>felixgiov [at] gmail [dot] com</u>.
                         </Text>
                     </div>
                 </div>

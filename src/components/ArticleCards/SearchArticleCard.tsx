@@ -9,8 +9,19 @@ import classes from './ArticleCard.module.scss';
 const SerachArticleCard = ({ article, path }: { article: IArticleHeaderData, path: string }) => (
   <div className="w-full lg:w-1/3 md:w-1/2 px-3 mb-10">
     <LinkTo href={path} passHref={true}>
-      <div className={combineClasses(classes.article_card, "px-[15px] py-[10px] border-b-[5px] border-blue-600 dark:bg-slate-800 dark:text-white bg-white text-black drop-shadow-lg")}>
-        <p className={combineClasses(classes.article_card__date, "font-medium text-xs mt-3 mb-2")}>{article.date}</p>
+      <div className={combineClasses(classes.article_card, "px-[15px] py-[10px] border-b-[5px] border-slate-500 dark:bg-slate-800 dark:text-white bg-white text-black drop-shadow-lg")}>
+        {/* <p className={combineClasses(classes.article_card__date, "font-medium text-xs mt-3 mb-2")}>{article.date}</p> */}
+        <div className="flex items-center mb-3">
+          <p className={combineClasses(classes.featured_article__date, "font-normal text-xs pt-3 mb-0")}>{article.date}</p>
+          <p className={combineClasses(classes.featured_article__date, "font-normal text-xs pt-3 mb-0 pl-1 pr-1")}>{" • "}</p>
+          <LinkTo
+            href={"/blog?author=" + article.author.name}
+            passHref
+            className={combineClasses(classes.featured_article__date, "font-normal text-xs pt-3 mb-0")}
+          >
+            {article.author.name}
+          </LinkTo>
+        </div>
         <LinkTo href={path} passHref={true}>
           <h1 className={combineClasses(classes.article_card__title, "text-[22px] font-bold my-0")} >
             {article.articleTitle}
@@ -19,18 +30,18 @@ const SerachArticleCard = ({ article, path }: { article: IArticleHeaderData, pat
         <ArticleTags tags={article.tags} />
         <div className={"flex items-center mt-3"}>
           <div className="flex items-center">
-            <Avatar author={article.author} className="w-[40px] h-[40px] mr-3 text-xl" />
-            <LinkTo
+            {/* <Avatar author={article.author} className="w-[40px] h-[40px] mr-3 text-xl" /> */}
+            {/* <LinkTo
               href={"/blog?author=" + article.author.name}
               passHref
               className={combineClasses(classes.author_name, 'text-sm font-medium')}>
               {article.author.name}
-            </LinkTo>
+            </LinkTo> */}
             {/* <p className={combineClasses(classes.author_name, 'text-sm font-medium')}>
               {article.author.name}
             </p> */}
           </div>
-          <ArticleCardCategory category={article.category} />
+          {/* <ArticleCardCategory category={article.category} /> */}
         </div>
       </div>
     </LinkTo>

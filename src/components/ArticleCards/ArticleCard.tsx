@@ -34,11 +34,11 @@ const ArticleCard = ({ article, path }: IProp) => {
         passHref
         className={combineClasses(
           classes.article_card,
-          "border-b-[5px] border-blue-500 dark:bg-slate-800 dark:text-white dark:drop-shadow-lg flex flex-col justify-between"
+          "border-b-[5px] border-slate-500 dark:bg-slate-800 dark:text-white dark:drop-shadow-lg flex flex-col justify-between"
         )}
       >
         <div>
-          <div className={"rounded-t-[4px] overflow-hidden h-[200px] relative"}>
+          {/* <div className={"rounded-t-[4px] overflow-hidden h-[200px] relative"}>
             <Image
               src={transformImagePaths(article.thumbnail)}
               alt={article.articleTitle}
@@ -47,12 +47,12 @@ const ArticleCard = ({ article, path }: IProp) => {
               objectFit="cover"
               loader={imgLoader}
             />
-          </div>
+          </div> */}
 
-          <div className={"d-block px-[15px] py-0"}>
-            <p className={"font-normal text-xs pt-3 mb-0 md:mb-3"}>
+          <div className={"d-block px-[15px] py-5"}>
+            {/* <p className={"font-normal text-xs pt-3 mb-0 md:mb-3"}>
               {article.date}
-            </p>
+            </p> */}
             <LinkTo href={transformPath(path)} passHref>
               <h1
                 className={
@@ -80,11 +80,11 @@ const ArticleCard = ({ article, path }: IProp) => {
           )}
         >
           <div className={"flex items-center"}>
-            <Avatar
+            {/* <Avatar
               author={article.author}
               className="w-[40px] h-[40px] mr-3 text-xl"
-            />
-            <LinkTo
+            /> */}
+            {/* <LinkTo
               href={"/blog?author=" + article.author.name}
               passHref
               className={combineClasses(
@@ -93,12 +93,23 @@ const ArticleCard = ({ article, path }: IProp) => {
               )}
             >
               {article.author.name}
+            </LinkTo> */}
+
+            <p className={combineClasses(classes.featured_article__date, "font-normal text-xs pt-3 mb-0")}>{article.date}</p>
+            <p className={combineClasses(classes.featured_article__date, "font-normal text-xs pt-3 mb-0 pl-1 pr-1")}>{" • "}</p>
+            <LinkTo
+              href={"/blog?author=" + article.author.name}
+              passHref
+              className={combineClasses(classes.featured_article__date, "font-normal text-xs pt-3 mb-0")}
+            >
+              {article.author.name}
             </LinkTo>
+
             {/* <p className={combineClasses(classes.author_name, 'text-sm font-medium')}>
               {article.author.name}
             </p> */}
           </div>
-          <ArticleCardCategory category={article.category} />
+          {/* <ArticleCardCategory category={article.category} /> */}
         </div>
       </LinkTo>
     </div>
